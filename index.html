@@ -1,0 +1,26 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>autoplay</title>
+ </head> 
+ <body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+  <video style="display: none; width: 100%; height: 100%;"  >
+    <source src="robux.webm" />
+  </video>
+  <button onclick="show()" style="margin: 10px; padding: 10px;">Press for free robux</button>
+  <script>
+    function show() {
+        var video = document.getElementsByTagName("video")[0]
+        video.style.display = "block"
+        video.play()
+        document.getElementsByTagName("button")[0].style.display="none"
+    }
+  </script>
+ </body> 
+</html>
